@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import ProductCard from "../components/ProductCard";
+import Head from 'next/head';
 
 const products = [
   {
@@ -20,6 +21,11 @@ const Home = () => {
   return (
     <div className="container">
       <Header />
+          <Head>
+        <title>Miad Construction</title>
+        <meta name="description" content="Mustafe Miad construction Material Website" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <main>
         <section className="hero">
           <h1>Welcome to Mustafe Miad Construction Material Co.</h1>
